@@ -1,0 +1,17 @@
+check-errors:
+
+Here, I run the code repeatedly on fragments of text ranging in length
+from 50 to 10,000 words, tabulating the reported odds along with the
+fraction of successful determinations.  If the reported odds are
+correct, then this sucessful fraction should be propto [1 + exp(odds)]^(-1)
+
+Run the test three times:
+set1 has a training set of ~25,000 words and a test set of ~40,000 words
+set2 has a training set of ~40,000 words and a test set of ~25,000 words
+
+finally, I use the full training set of non-disputed Federalist
+papers, and check it against the full corpus of Federalist papers
+(excluding #55, which seems contaminated, and assuming that Madison
+wrote all of the disputed ones, which seems pretty darn clear.)
+
+Unfortunately, there's not a lot of data to work with!
